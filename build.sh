@@ -5,10 +5,10 @@ set -e
 
 # Define project paths
 PROJECT_ROOT=$(pwd)
-FRONTEND_DIR="$PROJECT_ROOT/frontend"
-BACKEND_DIR="$PROJECT_ROOT/backend"
+# FRONTEND_DIR="$PROJECT_ROOT/frontend"
+BACKEND_DIR="$PROJECT_ROOT"
 STATICFILES_DIR="$PROJECT_ROOT/staticfiles"
-FRONTEND_STATIC_DIR="$STATICFILES_DIR/frontend"
+#RONTEND_STATIC_DIR="$STATICFILES_DIR/frontend"
 STATIC_ROOT="$STATICFILES_DIR/backend"
 
 # Step 1: Clean up previous static files to avoid conflicts
@@ -45,4 +45,4 @@ python manage.py migrate
 
 echo "Build completed successfully!"
 echo "Static files are in $STATIC_ROOT"
-echo "front end Static files are in $FRONTEND_STATIC_DIR"
+#echo "front end Static files are in $FRONTEND_STATIC_DIR"
