@@ -1,0 +1,20 @@
+{%extends 'index.html'%}
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{%block title%} @CreativePlayground {%endblock%}</title>
+
+</head>
+<body>
+{%block content%}
+<div id="container">
+    <p>We're creative</p>
+    {%endblock%}
+</div>
+{% block extra_scripts %}
+ <script src="{% static 'scripts/apps.js' %}"></script>
+{% endblock %}
+</body>
+</html>
